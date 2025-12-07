@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: royalblue;
+    color: gold;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* About Section */
+#about h2 {
+    color: royalblue;
+    margin-bottom: 1rem;
+}
+
+#about h3 {
+    margin-top: 1rem;
+    color: royalblue;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.skills li {
+    background-color: gold;
+    color: royalblue;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects h2 {
+    color: royalblue;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: white;
+    border: 2px solid royalblue;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: royalblue;
+    color: gold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background-color: gold;
+    color: royalblue;
+}
+
+/* Footer */
+footer {
+    background-color: royalblue;
+    color: gold;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
